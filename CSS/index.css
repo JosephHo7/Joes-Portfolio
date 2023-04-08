@@ -1,0 +1,156 @@
+:root {
+    --primary-color: #357b70;
+    --secondary-color: #e0b354;
+    --dark-grey: #2b2b2b;
+    --light-grey: #D3D3D3;
+    --light-green: #489c79;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --white: #fff; 
+    --larger-text: 18px;
+    --main-text: 16px;
+    --bold-font: 700;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.profile-img {
+    display: grid;
+    grid-template-columns: 18em 1fr;
+}
+
+.profile-portrait {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card {
+    display: block;
+    width: 18rem;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-2 {
+    width: 100%;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.about-text {
+    display: flex;
+    align-items: center;
+    padding-left: 1.8em;
+    font-size: 1.5em;
+}
+
+.card-img-overlay {
+    width: 50%;
+    margin-left: 5%;
+}
+
+.resume {
+    display: block;
+    text-align: start;
+    margin-left: 2.5em;
+    margin-bottom: 5%;
+    grid-column: 2;
+}
+
+@media screen and (max-width: 700px) {
+    .card-title{ 
+        display: block;
+        max-width: 700px;
+        text-align: center;
+    }
+
+    .card-img-overlay{
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+
+    .profile-portrait {
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+    .profile-img{
+        display: block;
+    }
+
+    h1 {
+        font-size: 300%;
+    }
+
+    .card-text {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .about-text{
+        padding: 0;
+        display: block;
+        text-align: start;
+    }
+
+    .resume {
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1500px) {
+    .card-title{ 
+        display: block;
+        max-width: 700px;
+        text-align: center;
+    }
+
+    .card-img-overlay{
+        display: block;
+        margin: auto;
+        width: 75%;
+    }
+
+    .profile-portrait {
+        display: block;
+    }
+
+    .profile-img{
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 300%;
+    }
+
+    .card-text {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .about-text{
+        padding: 0;
+        display: block;
+        text-align: start;
+    }
+
+    .resume {
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+}

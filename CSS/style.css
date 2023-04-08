@@ -1,0 +1,90 @@
+/*css design for all pages */
+:root {
+    --primary-color: #313131;
+    --secondary-color: #e0b354;
+    --dark-grey: #2b2b2b;
+    --light-grey: #D3D3D3;
+    --light-green: #489c79;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --white: #fff; 
+    --text-white: #fff;
+    --larger-text: 18px;
+    --main-text: 16px;
+    --bold-font: 700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'lato', sans-serif;
+    font-weight: 400;
+    font-size: var(--main-text);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: black;
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    font-size: 6em;
+    font-weight: var(--bold-font);
+    margin-top: 4%;
+    color: white;
+}
+
+h5 {
+    font-size: 1.3em;
+    font-weight: var(--bold-font);
+    margin-top: 4%;
+    color: white;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--white);
+    text-decoration: none;
+}
+
+a:hover, a:focus{
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* button css  */
+.button {
+    border:none; 
+    display: inline-block;
+    font-family: inherit;
+    background-color: var(--dark-grey);
+    color: var(--text-white);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid var(--shadow-color);
+    transition: opacity 0.2s;
+}
+
+.button:hover, .button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.button:visited {
+    text-decoration: none;
+    color: var(--text-white);
+}
