@@ -30,6 +30,7 @@ body {
 
 .card-img {
     width: 100%;
+    filter: brightness(50%);
 }
 
 .card-2 {
